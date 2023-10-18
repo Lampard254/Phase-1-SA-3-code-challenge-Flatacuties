@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flatacuties</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://kit.fontawesome.com/2ec18317e9.js" crossorigin="anonymous"></script>
+    <script src="./src/index.js" defer></script>
+    <link rel="shortcut icon" href="./resources/dog-icon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header id="header">
+        <div id="logo">
+            <h1>Flatacuties<i class="fa fa-cat fa-beat"></i></h1>
+        </div>
+        <div class="top-right">
+            <ul>
+                <li><button id="login">Login</button></li>
+                <li><i class="user fa-regular fa-user"></i></li>
+                <li><i class="fa fa-caret-down"></i></li>
+            </ul>
+            
+        </div>       
+    </header>
+    <main class="main">
+        <h3>Welcome to Flatacuties, your go-to place for the cutest animals!</h3>
+        <!-- <h3>Animal Description</h3> -->
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nisi mollitia ipsam delectus nihil voluptates nostrum,
+            quas a consequatur adipisci excepturi dolor pariatur! Minima quos ipsum ea maiores eaque delectus sit perspiciatis.
+            lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nisi mollitia ipsam delectus nihil voluptates nostrum!
+        </p>
+        <div id="animals">
+            <div class="content" >
+                <div id="names-container">
+                    <h4>All animals in our collection</h4>
+                    <p>Select an animal below for more details.</p>
+                </div>
+                <!-- A dummy form for adding animals -->
+                <div id="add-animal-form">
+                    <h4>Add a New Animal</h4>
+                    <form id="animal-form">
+                        <input type="text" id="animal-name-input" placeholder="Name of the animal">
+                        <br>
+                        <input type="text" id="animal-image-input" placeholder="Image URL">
+                        <br>                
+                        <button type="submit" id="submit-buttton" class="button-85">Add Animal</button>
+                    </form>
+                </div>  
+            </div>
+            <div id="animal-details">
+                <h4>Animal Details</h4>
+                <p><span id="animal-name">Name: </span></p>
+                <p><span id="number-of-votes">Number of votes: </span></p>
+                <p><span class="first-line">Is this the cutest animal in our collection? </span><br>
+                Use the icons below the image to vote, comment, share, or reset the number of votes.
+                </p>
+                <div id="image-container">
+                    <div id="animal-image">
+                    </div>
+                    
+                    <div class="ribbon">
+                        <div class="icon-container">
+                            <i class="fa fa-heart hollow-heart" id="vote-button"></i>
+                            <span class="icon-count" id="vote-count">0</span>
+                        </div>
+                        <div class="icon-container" id="comment">
+                            <i class="fa-regular fa-comment"></i>
+                            <span class="icon-count" id="comment-count">2,106</span>
+                        </div>
+                        <div class="icon-container" id="share">
+                            <i class="fa-regular fa-paper-plane"></i>
+                            <span class="icon-count">1,227</span>
+                        </div>
+                        <div class="icon-container" id="reset">
+                            <i class="fa fa-rotate-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </main>
+    <footer>
+        <div id="footer">
+            <h4>&copy Flatacuties, 2023</h4>
+        </div>
+    </footer>
+    
+</body>
+</html>
