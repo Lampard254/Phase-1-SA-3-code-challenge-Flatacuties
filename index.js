@@ -5,7 +5,7 @@ Fetching data from the API hosted on GH Pages.
 The data returned is an object of 'characters', and the array can be obtained by 'data.characters'
 */
 
-fetch("https://arshavineroy.github.io/phase-1-week-2-code-challenge/db.json")
+fetch("https://lampard254.github.io/Phase-1-SA-3-code-challenge-Flatacuties/db.json")
     .then(response => response.json())
     .then(data => {
         const array = Object.values(data.characters); // Converting the object received into an array so we can iterate
